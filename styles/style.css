@@ -1,0 +1,493 @@
+@font-face {
+    font-family: Calibri;
+    src: url(../fonts/Calibri.ttf);
+   }
+
+
+@font-face {
+    font-family: Bebas;
+    src: url(../fonts/bebas.ttf);
+   }
+
+@font-face {
+ font-family: StMarie;
+ src: url(../fonts/StMarie.otf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+body {
+    min-height: 100%;
+    position: absolute;
+    width: 100%;
+    
+}
+
+main {
+    width: 1600px;
+    margin: 0 auto;
+    height: 100%;
+    padding-bottom: 71px;
+    padding-top: 126px; 
+}
+
+
+
+/* ----------------  HEADER  -----------------*/
+.main-header {
+    height: 123px;
+    font-size: 0;
+    position: fixed;
+    margin-top: -126px;
+    background: white;
+ 
+    width: 1600px;
+}
+
+
+
+.logo {
+    display: block;
+    margin: 5px 0px 5px 218px;
+    display: inline-block;
+    float: left;
+}
+
+.logo img {
+    margin-right: 51px;
+    float: left;
+}
+
+.logo h1 {
+    font-family: Calibri;
+    color:  #fb9c06;
+    font-size: 37px;
+    font-weight: 500;
+
+    text-align: center;
+    display: inline-block;
+    margin-top: 9px;
+    letter-spacing: 1px;
+}
+
+.logo h1>span {
+    display: block;
+    font-family: Bebas;
+    color:  #6e6d6b;
+    font-size: 37px;
+    font-weight: 500;
+    margin-top: -3px;
+}
+
+.nav-menu {
+    line-height: 30px;
+
+    padding: 5px;
+    font-size: 16px;
+ 
+    display: inline-block;
+    float: right;
+    margin: 0px 165px 0px 0px;
+}
+
+.nav-menu ul {
+    list-style: none;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+.nav-menu-item {
+    display: inline-block;
+    font-family: Calibri;
+    font-weight: bold;
+    font-size: 23px;
+    margin: 14px 33px 0px 35px;
+
+}
+.blog-icon {
+    margin-right: 36px;
+}
+.about-icon {
+    margin-right: 25px;
+}
+.home-icon {
+    margin-right: 28px;
+}
+
+
+.home-icon i{
+      background-position: 110px -5px;
+      height: 50px;
+      width: 50px;
+}
+.about-icon i {
+    height: 50px;
+    width: 40px;
+    background-position: 6px ;
+}
+.work-icon i {
+    height: 50px;
+    width: 42px;
+    background-position: 47px 0px;
+}
+.blog-icon i {
+    height: 50px;
+    width: 50px;
+    background-position: 230px 1px;
+}
+.contact-icon i {
+    height: 50px;
+    width: 58px;
+    background-position: 180px 8px;
+}
+
+.nav-menu-item i {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 9px;
+
+    background-image: url(../images/spritesheet.png);
+}
+
+.nav-menu-item:hover {
+    transform: scale(1.3);
+}
+.transition {
+    transition: 0.5s;
+  }
+
+.nav-menu-item a {
+    color: #9e9b9b;
+    outline: none;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+}
+
+.nav-menu-item a:visited {
+    color: #9e9b9b;
+    outline: none;
+    text-decoration: none;
+}
+
+.header::after {
+    clear: both;
+}
+
+
+/* ---------------------  SLIDER -------------------*/
+.slider {
+    display: inline-block;
+    width: 1600px;
+    height: 412px;
+    /* margin-top: 126px;     */
+    margin-bottom: 7px;
+    background-image: url(../images/big-orange-bg.png);
+    clear: both;
+    border-top: 6px solid rgba(251, 156, 6, 0.7);
+    border-bottom: 6px solid #fb9c06;
+}
+
+.slider-wraper {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.slider-wraper div {
+    display: block;
+    font-family: Bebas;
+    font-size: 37px;
+    font-weight: 400;
+    
+    top: 100px;
+}
+
+.slider-wraper div:first-child {
+    background-color:  rgba(0, 0, 0, 0.69);
+    width: 382px;
+    height: 67px;
+    color:  #fb9c06;
+    margin-top: 130px;
+    margin-left: 20px;
+    padding-left: 30px;
+    padding-top: 7px;
+    letter-spacing: 0.015em;
+}
+.slider-wraper div:last-child {
+    background-color:  rgba(255, 175, 18, 0.7);
+    width: 397px;
+    height: 77px;
+    color:  #6e6d6b;
+    margin-top: 25px;
+    margin-left: 10px;
+    padding-left: 32px;
+    padding-top: 11px;
+    letter-spacing: 0.015em;
+}
+
+
+
+/* ------------  TEXTAREAS  -----------------*/
+.textareas {
+    width: 1200px;
+    margin: 0 200px 31px 200px;
+    display: inline-block;
+}
+.textareas::after {
+    clear: both;
+}
+
+.textareas article {
+    display: inline-block;
+    width: 25%;
+    height: 170px;
+    float: left;
+    font-family: Calibri;
+    color:  #000000;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23.16px;
+    text-align: left;
+    padding: 20px;
+    letter-spacing: 0.02em;
+  
+
+}
+
+.textareas article>p {
+    display: inline-block;
+    height: 130px;
+    overflow: hidden;
+}
+
+.textareas article>a {
+    text-decoration: none;
+    font-family: Calibri;
+    color:  #ffac00;
+    font-size: 17px;
+    font-weight: 300;
+    font-style: italic;
+    text-align: right;
+    margin-left: 170px;
+}
+
+.textareas article>a:hover {
+    color: rgb(141, 93, 5);
+}
+
+.separator {
+    border-bottom: 3px solid rgb(236, 235, 235);
+}
+
+
+
+/* ---------------   TEAM ---------------------------*/
+.team {
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 0;
+}
+.team>div {
+    font-family: StMarie;
+    color:  #ff9c00;
+    font-size: 40px;
+    font-weight: 100;
+    width: 100%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    display: inline-block;
+    margin-top: 14px;
+    
+}
+
+.team>div>span {
+    border-bottom: 2px solid #ff9c00;
+    margin-left: 24px;
+}
+
+.team figure {
+    display: inline-block;
+    width: 314px;
+    font-family: Calibri;
+    color:  #333333;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.team figure:nth-child(3n) {
+    margin-left: 129px;
+    margin-right: 129px;
+}
+
+.team figure>p {
+    font-family: Calibri;
+    color:  #fb9c06;
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 28px;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.team figure>p>strong {
+    font-family: Calibri;
+    color:  #6e6d6b;
+    font-size: 22px;
+    font-weight: 300;
+
+    text-align: left;
+}
+
+.team figure>img {
+    width: 100%;
+    border: 9px solid #ffb73e;
+    border-radius: 50%;
+}
+
+
+
+.team figure>figcaption {
+    height: 110px;
+    width: 270px;
+    margin: 14px auto 0 33px;
+    overflow: hidden;
+    letter-spacing: 0.02em;
+    line-height: 1.6;
+    text-align: left;
+}
+
+
+/* ----------------   MESSAGE   -------------------------*/
+
+.message {
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 52px;
+}
+
+.message>div {
+    font-family: StMarie;
+    color:  #ff9c00;
+    font-size: 40px;
+    font-weight: 100;
+    width: 100%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    display: inline-block;
+    margin-top: 14px;
+    margin-bottom: 68px;
+    
+}
+
+.message>div>span {
+    border-bottom: 2px solid #ff9c00;
+    margin-left: 24px;
+}
+
+
+.message-name {
+    margin-bottom: 32px;
+}
+
+.message-email {
+    margin-bottom: 40px;
+}
+
+.message-text {
+    margin-bottom: 16px;
+}
+
+
+.message form div>span {
+    font-family: StMarie;
+    color:  #fb9c06;
+    font-size: 24px;
+    font-weight: 100;
+    text-align: left;
+    margin-right: 66px;
+    display: inline-block;
+    width: 60px;
+}
+
+
+.message-name input{
+    background-color:  rgba(247, 246, 245, 0.92);
+    width: 1070px;
+    height: 34px;
+    border: none;
+    border-left: 5px solid #d3d1d0;
+    border-top: 1px solid #d3d1d0;
+    font-family: StMarie;
+    font-size: 16px;
+}
+
+.message-email input{
+    background-color:  rgba(247, 246, 245, 0.92);
+    width: 1070px;
+    height: 34px;
+    border: none;
+    border-left: 5px solid #d3d1d0;
+    border-top: 1px solid #d3d1d0;
+    font-family: StMarie;
+    font-size: 16px;
+}
+
+.message-text span {
+    position: absolute;
+}
+
+.message-text textarea {
+    background-color:  rgba(247, 246, 245, 0.92);
+    width: 1070px;
+    height: 90px;
+    margin-left: 128px;
+    resize: none;
+    border: none;
+    border-left: 5px solid #d3d1d0;
+    border-top: 1px solid #d3d1d0;
+    font-family: StMarie;
+    font-size: 16px;
+    
+} 
+
+.submit-button {
+    width: 176px;
+    height: 48px;
+    margin-left: 994px;
+    font-family: StMarie;
+    color:  rgba(247, 246, 245, 0.92);
+    background-color: #fb9c06;
+    font-size: 33px;
+}
+
+
+/* -------------   FOOTER   -----------------------------*/
+.footer {
+    background-color:  #fb9c06;
+    width: 1600px;
+    height: 71px;
+    position: absolute;
+    bottom: 0px;
+
+
+}
+
+.footer>div {
+    font-family: StMarie;
+    color:  #ffffff;
+    font-size: 33px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 14px;
+    width: 100%;
+}
